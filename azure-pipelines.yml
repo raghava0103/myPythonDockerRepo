@@ -34,6 +34,7 @@ stages:
       inputs:
         Contents: 'eks-deploy-from-ecr.yaml'
         TargetFolder: '$(build.artifactstagingdirectory)'
+        
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
